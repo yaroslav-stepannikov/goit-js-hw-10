@@ -22,6 +22,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -29,4 +30,81 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+input {
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input:focus {
+  border: 1px solid #4e75ff;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.input-wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
 }

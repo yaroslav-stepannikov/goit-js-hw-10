@@ -32,24 +32,27 @@ main:has(.back-link) {
   text-align: center;
 }
 
-input {
+/* ==== TIMER ==== */
+
+.timer-input {
   width: 272px;
   height: 40px;
+  padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;
   outline: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input:hover {
+.timer-input:hover {
   border: 1px solid #000;
 }
 
-input:focus {
+.timer-input:focus {
   border: 1px solid #4e75ff;
 }
 
-button {
+.timer-btn {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -107,4 +110,87 @@ button:disabled {
   line-height: 1.5;
   color: #2e2f42;
   text-transform: uppercase;
+}
+
+/* ==== SNACKBAR ==== */
+
+.form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.snackbar-input {
+  display: block;
+  width: 296px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.snackbar-input:focus {
+  border-color: #4a90e2;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+  padding: 0 6px;
+}
+
+fieldset label {
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.snackbar-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.snackbar-btn:hover {
+  background: #357ab8;
+}
+
+.snackbar-btn:active {
+  background: #2d5e94;
 }
